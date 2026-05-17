@@ -4,7 +4,6 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.io.*;
-import javax.swing.ImageIcon;
 
 public class MainFrame extends JFrame {
 
@@ -23,11 +22,15 @@ public class MainFrame extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
-        ImageIcon icon = new ImageIcon("assets/tickly.ico");
+        ImageIcon icon = new ImageIcon(
+                getClass().getResource("/assets/tickly.png"));
+
         setIconImage(icon.getImage());
 
         criarComponentes();
         configurarTimer();
+        carregarMedicoes();
+        atualizarTempoTotal();
 
         setVisible(true);
     }
