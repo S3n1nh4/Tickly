@@ -1,0 +1,4 @@
+*.class
+medicoes.txt
+.vscode/
+.idea/
