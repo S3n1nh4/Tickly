@@ -23,7 +23,7 @@ public class MainFrame extends JFrame {
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setLocationRelativeTo(null);
 
-        ImageIcon icon = new ImageIcon("assets/tickly.png");
+        ImageIcon icon = new ImageIcon("assets/tickly.ico");
         setIconImage(icon.getImage());
 
         criarComponentes();
